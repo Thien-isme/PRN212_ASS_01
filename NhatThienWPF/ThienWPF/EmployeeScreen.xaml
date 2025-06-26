@@ -1,0 +1,278 @@
+﻿<Window x:Class="ThienWPF.EmployeeScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ThienWPF"
+        mc:Ignorable="d"
+        Title="Employee Dashboard" Height="700" Width="1000"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="lblWelcomeMessage"
+                   Grid.Row="0"
+                   Margin="20"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Text="Chào mừng Nhân viên!"/>
+
+        <TabControl x:Name="mainTabControl" Grid.Row="1" Margin="10" SelectionChanged="MainTabControl_SelectionChanged">
+            <TabItem Header="Customer Management">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <Grid>
+                            <!-- TextBox -->
+                            <TextBox x:Name="txtCustomerSearch"
+             Width="200"
+             Margin="0,0,10,0"
+             Padding="5"
+             TextWrapping="Wrap"
+             VerticalContentAlignment="Center"
+             TextChanged="TxtCustomerSearch_TextChanged"/>
+
+                            <!-- Placeholder -->
+                            <TextBlock x:Name="txtPlaceholder"
+               Text="Enter CompanyName..."
+               Foreground="Gray"
+               Margin="8,0,0,0"
+               VerticalAlignment="Center"
+               IsHitTestVisible="False"
+               Visibility="Visible"/>
+                        </Grid>
+
+                        <Button Content="Search" Padding="10,5" Click="BtnCustomerSearch_Click"/>
+                        <Button Content="Refresh" Margin="10,0,0,0" Padding="10,5" Click="BtnCustomerRefresh_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dgCustomers"
+                              Grid.Row="1"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              CanUserAddRows="False"
+                              SelectionChanged="DgCustomers_SelectionChanged"
+                              Margin="5,10,5,5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="CustomerID" Binding="{Binding CustomerID}" Width="Auto"/>
+                            <DataGridTextColumn Header="CompanyName" Binding="{Binding CompanyName}" Width="*"/>
+                            <DataGridTextColumn Header="ContactName" Binding="{Binding ContactName}" Width="*"/>
+                            <DataGridTextColumn Header="ContactTitle" Binding="{Binding ContactTitle}" Width="*"/>
+                            <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="*"/>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding Phone}" Width="Auto"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,10,5,5">
+                        <Button Content="Add" Margin="5" Padding="15,8" Click="BtnCustomerAdd_Click"/>
+                        <Button Content="Update" Margin="5" Padding="15,8" Click="BtnCustomerUpdate_Click"/>
+                        <Button Content="Delete" Margin="5" Padding="15,8" Click="BtnCustomerDelete_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Product Management">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        
+                        <Grid>
+                            <!-- TextBox -->
+                            <TextBox x:Name="txtProductSearch"
+Width="200"
+Margin="0,0,10,0"
+Padding="5"
+TextWrapping="Wrap"
+VerticalContentAlignment="Center"
+TextChanged="TxtProductSearch_TextChanged"/>
+
+                            <!-- Placeholder -->
+                            <TextBlock x:Name="txtProductSearchPlaceholder"
+  Text="Enter ProductName..."
+  Foreground="Gray"
+  Margin="8,0,0,0"
+  VerticalAlignment="Center"
+  IsHitTestVisible="False"
+  Visibility="Visible"/>
+                        </Grid>
+                        <Button Content="Search" Padding="10,5" Click="BtnProductSearch_Click"/>
+                        <Button Content="Refresh" Margin="10,0,0,0" Padding="10,5" Click="BtnProductRefresh_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dgProducts"
+                              Grid.Row="1"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              CanUserAddRows="False"
+                              SelectionChanged="DgProducts_SelectionChanged"
+                              Margin="5,10,5,5">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="ProductID" Binding="{Binding ProductID}" Width="Auto"/>
+                            <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}" Width="320"/>
+                            <DataGridTextColumn Header="CategoryID" Binding="{Binding CategoryID}" Width="100"/>
+                            <DataGridTextColumn Header="UnitPrice" Binding="{Binding UnitPrice, StringFormat='{}{0:C}'}" Width="100"/>
+                            <DataGridTextColumn Header="UnitsInStock" Binding="{Binding UnitsInStock}" Width="120"/>
+                            <DataGridCheckBoxColumn Header="Discontinued" Binding="{Binding Discontinued}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+                    <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,10,5,5">
+                        <Button Content="Add" Margin="5" Padding="15,8" Click="BtnProductAdd_Click"/>
+                        <Button Content="Update" Margin="5" Padding="15,8" Click="BtnProductUpdate_Click"/>
+                        <Button Content="Delete" Margin="5" Padding="15,8" Click="BtnProductDelete_Click"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <TabItem Header="Create Order">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Padding="10" Margin="10">
+                    <Grid Margin="11,0,-11,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <TextBlock Grid.Row="0" Grid.ColumnSpan="2" Text="Create Order" FontWeight="Bold" FontSize="18" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+
+                        <StackPanel Grid.Row="1" Grid.Column="0" Margin="5">
+                            <TextBlock Text="Choose Customer:" Margin="0,0,0,5"/>
+                            <ComboBox x:Name="cbCustomers" DisplayMemberPath="CompanyName" SelectedValuePath="CustomerID"
+                                      SelectionChanged="CbCustomers_SelectionChanged" IsEditable="True"/>
+                        </StackPanel>
+
+                        <StackPanel Grid.Row="1" Grid.Column="1" Margin="5">
+                            <TextBlock Text="Choose Product:" Margin="0,0,0,5"/>
+                            <ComboBox x:Name="cbProducts" DisplayMemberPath="ProductName" SelectedValuePath="ProductID"
+                                      SelectionChanged="CbProducts_SelectionChanged" IsEditable="True"/>
+                        </StackPanel>
+                        <Grid Grid.Row="2" Grid.ColumnSpan="2" Margin="0,0,0,312">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <TextBlock Text="Quantity:" Grid.Column="0" Margin="5" VerticalAlignment="Center"/>
+                            <TextBox x:Name="txtOrderItemQuantity" Grid.Column="1" Margin="5,5,5,10" Padding="5" Text="1" TextChanged="TxtOrderItemQuantity_TextChanged"/>
+                            <TextBlock Text="Discound (%):" Grid.Column="2" Margin="5" VerticalAlignment="Center"/>
+                            <TextBox x:Name="txtOrderItemDiscount" Grid.Column="3" Margin="5,5,5,10" Padding="5" Text="0" TextChanged="TxtOrderItemDiscount_TextChanged"/>
+                        </Grid>
+
+
+
+                        <DataGrid x:Name="dgCurrentOrderItems"
+                                  Grid.Row="2" Grid.ColumnSpan="2"
+                                  AutoGenerateColumns="False"
+                                  IsReadOnly="True" CanUserAddRows="False"
+                                  Margin="-13,94,13,0">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="ProductID" Binding="{Binding ProductID}" Width="80"/>
+                                <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}" Width="350"/>
+                                <DataGridTextColumn Header="UnitPrice" Binding="{Binding UnitPrice, StringFormat='{}{0:C}'}" Width="100"/>
+                                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100"/>
+                                <DataGridTextColumn Header="Discound (%)" Binding="{Binding Discount, StringFormat='P0'}" Width="Auto"/>
+                                <DataGridTextColumn Header="Total amount" Binding="{Binding LineTotal, StringFormat='{}{0:C}'}" Width="150"/>
+                                <DataGridTemplateColumn Header="" Width="*">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="X" Click="BtnRemoveOrderItem_Click" Tag="{Binding ProductID}" Background="Red" Foreground="White" Width="25" Height="25"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+
+                        <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,10,0,0">
+                            <TextBlock Text="Totals: " FontWeight="Bold" FontSize="18"/>
+                            <TextBlock x:Name="lblOrderTotal" Text="0.00 đ" FontWeight="Bold" FontSize="18" Margin="0,0,20,0"/>
+                            <Button Content="Order Now" Margin="5" Padding="15,8" Click="BtnPlaceOrder_Click"/>
+                        </StackPanel>
+                        <Button Content="Add to card" Padding="15,8" Click="BtnAddProductToOrder_Click" Grid.Column="1" Margin="284,48,13,267" Grid.Row="2"/>
+                    </Grid>
+                </Border>
+            </TabItem>
+
+            <TabItem Header="Ordered Management">
+                <Border BorderBrush="LightGray" BorderThickness="1" CornerRadius="5" Padding="10" Margin="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0" Text="Existing orders" FontWeight="Bold" FontSize="18" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+                        <DataGrid x:Name="dgExistingOrders"
+                                  Grid.Row="1"
+                                  AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False"
+                                  SelectionChanged="DgExistingOrders_SelectionChanged"
+                                  Margin="0,0,0,0">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="OrderID" Binding="{Binding OrderID}" Width="200"/>
+                                <DataGridTextColumn Header="CustomerID" Binding="{Binding CustomerID}" Width="150"/>
+                                <DataGridTextColumn Header="EmployeeID" Binding="{Binding EmployeeID}" Width="*"/>
+                                <DataGridTextColumn Header="OrderDate" Binding="{Binding OrderDate, StringFormat='{}{0:dd/MM/yyyy}'}" Width="200"/>
+
+                                <DataGridTemplateColumn Header="View Details" Width="200">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="Xem" Click="BtnViewOrderDetails_Click" Tag="{Binding OrderID}"/>
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </Grid>
+                </Border>
+            </TabItem>
+
+            <TabItem Header="Report">
+                <Grid Margin="10">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="From:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <DatePicker x:Name="dpStartDate" Width="120" Margin="0,0,10,0"/>
+                        <TextBlock Text="to:" VerticalAlignment="Center" Margin="0,0,5,0"/>
+                        <DatePicker x:Name="dpEndDate" Width="120" Margin="0,0,20,0"/>
+                        <Button Content="Create report" Padding="15,8" Click="BtnGenerateReport_Click"/>
+                    </StackPanel>
+
+                    <DataGrid x:Name="dgReports"
+                              Grid.Row="1"
+                              AutoGenerateColumns="False" IsReadOnly="True" CanUserAddRows="False"
+                              Margin="0,15,0,10">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="OrderID" Binding="{Binding OrderID}" Width="Auto"/>
+                            <DataGridTextColumn Header="OrderDate" Binding="{Binding OrderDate, StringFormat='{}{0:dd/MM/yyyy}'}" Width="Auto"/>
+                            <DataGridTextColumn Header="CompanyName" Binding="{Binding CompanyName}" Width="*"/>
+                            <DataGridTextColumn Header="EmployeeName" Binding="{Binding EmployeeName}" Width="*"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
