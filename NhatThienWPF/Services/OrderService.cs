@@ -26,6 +26,11 @@ namespace Services
             return orderRepository.CreateOrderID();
         }
 
+        public bool Delete(int orderID)
+        {
+            return orderRepository.Delete(orderID);
+        }
+
         public List<Order> GetAllOrdered()
         {
             return orderRepository.GetAllOrdered();

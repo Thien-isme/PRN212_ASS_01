@@ -1,0 +1,52 @@
+﻿<Window x:Class="ThienWPF.OrderDetailsDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Order " Height="450" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <StackPanel Margin="15">
+        <TextBlock Text="Order Details" FontWeight="Bold" FontSize="18" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+
+        <Grid Margin="0,0,0,10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="OrderID:" Grid.Row="0" Grid.Column="0" Margin="5" FontWeight="SemiBold"/>
+            <TextBlock x:Name="txtOrderId" Grid.Row="0" Grid.Column="1" Margin="5"/>
+
+            <TextBlock Text="OrderDate:" Grid.Row="1" Grid.Column="0" Margin="5" FontWeight="SemiBold"/>
+            <TextBlock x:Name="txtOrderDate" Grid.Row="1" Grid.Column="1" Margin="5"/>
+
+            <TextBlock Text="CompanyName:" Grid.Row="2" Grid.Column="0" Margin="5" FontWeight="SemiBold"/>
+            <TextBlock x:Name="txtCustomerName" Grid.Row="2" Grid.Column="1" Margin="5"/>
+        </Grid>
+
+        <TextBlock Text="Products in Order:" FontWeight="SemiBold" Margin="0,0,0,5"/>
+        <DataGrid x:Name="dgOrderItems" AutoGenerateColumns="False" IsReadOnly="True" Height="200" CanUserAddRows="False" CanUserDeleteRows="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ProductID" Binding="{Binding ProductId}" Width="Auto"/>
+                <DataGridTextColumn Header="ProductName" Binding="{Binding ProductName}" Width="*"/>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="Auto"/>
+                <DataGridTextColumn Header="UnitPrice" Binding="{Binding UnitPrice, StringFormat='C', ConverterCulture='en-US'}" Width="Auto"/>
+                <DataGridTextColumn Header="Discount (%)" Binding="{Binding Discount, StringFormat='P0'}" Width="Auto"/>
+                <DataGridTextColumn Header="TotalForItem" Binding="{Binding TotalForItem, StringFormat='C', ConverterCulture='en-US'}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,15,0,0">
+            <TextBlock Text="Tổng Cộng:" FontWeight="Bold" FontSize="16" VerticalAlignment="Center" Margin="0,0,10,0"/>
+            <TextBlock x:Name="txtGrandTotal" FontWeight="Bold" FontSize="16" VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <Button Content="Đóng" Margin="0,20,0,0" Padding="15,8" HorizontalAlignment="Center" Click="BtnClose_Click"/>
+    </StackPanel>
+</Window>

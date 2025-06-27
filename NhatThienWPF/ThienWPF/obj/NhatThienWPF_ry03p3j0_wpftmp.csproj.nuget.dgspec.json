@@ -1,0 +1,375 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\NhatThienWPF.csproj": {}
+  },
+  "projects": {
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj",
+        "projectName": "BussinessObject",
+        "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\DataAccessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\DataAccessLayer.csproj",
+        "projectName": "DataAccessLayer",
+        "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\DataAccessLayer.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            },
+            "netstandard-System.Data.Linq": {
+              "target": "Package",
+              "version": "[1.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\Repositories.csproj",
+        "projectName": "Repositories",
+        "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\Repositories.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj"
+              },
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\DataAccessLayer.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\DataAccessLayer\\DataAccessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\Services.csproj",
+        "projectName": "Services",
+        "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\Services.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj"
+              },
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\Repositories.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\Repositories.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\NhatThienWPF.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\NhatThienWPF.csproj",
+        "projectName": "NhatThienWPF",
+        "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\NhatThienWPF.csproj",
+        "packagesPath": "C:\\Users\\Thien\\.nuget\\packages\\",
+        "outputPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Thien\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
+            "projectReferences": {
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\BussinessObject.csproj"
+              },
+              "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\Services.csproj": {
+                "projectPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

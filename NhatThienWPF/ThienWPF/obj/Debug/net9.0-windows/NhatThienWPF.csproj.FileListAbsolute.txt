@@ -172,3 +172,5 @@ F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\ref
 F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\NhatThienWPF.pdb
 F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\NhatThienWPF.genruntimeconfig.cache
 F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\ref\NhatThienWPF.dll
+F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\OrderDetailsDialog.baml
+F:\Ky_5_FPT\PRN212\Assignment\NhatThienWPF\ThienWPF\obj\Debug\net9.0-windows\OrderDetailsDialog.g.cs

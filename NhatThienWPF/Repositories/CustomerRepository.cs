@@ -46,6 +46,8 @@ namespace Repositories
             return true;
         }
 
+
+
         public List<Customer> GetAllCustomers()
         {
             return dbContext.Customers.ToList();

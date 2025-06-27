@@ -43,12 +43,12 @@
 
                             <!-- Placeholder -->
                             <TextBlock x:Name="txtPlaceholder"
-               Text="Enter CompanyName..."
-               Foreground="Gray"
-               Margin="8,0,0,0"
-               VerticalAlignment="Center"
-               IsHitTestVisible="False"
-               Visibility="Visible"/>
+             Text="Enter CompanyName..."
+             Foreground="Gray"
+             Margin="8,0,0,0"
+             VerticalAlignment="Center"
+             IsHitTestVisible="False"
+             Visibility="Visible"/>
                         </Grid>
 
                         <Button Content="Search" Padding="10,5" Click="BtnCustomerSearch_Click"/>
@@ -77,6 +77,8 @@
                         <Button Content="Update" Margin="5" Padding="15,8" Click="BtnCustomerUpdate_Click"/>
                         <Button Content="Delete" Margin="5" Padding="15,8" Click="BtnCustomerDelete_Click"/>
                     </StackPanel>
+                    <Label Content="Vì bảng Customer có CustomerID đang được bảng Orders tham chiếu để lấy khóa ngoại nên khi" Foreground="Red" HorizontalAlignment="Left" Margin="59,4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="534" Height="26"/>
+                    <Label Content="'DELETE' em chỉ xóa SDT trong bảng Customer thôi ạ" HorizontalAlignment="Left" Foreground="Red" Margin="59,30,0,0" Grid.Row="2" VerticalAlignment="Top" Width="534"/>
                 </Grid>
             </TabItem>
 
@@ -89,7 +91,7 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="5">
-                        
+
                         <Grid>
                             <!-- TextBox -->
                             <TextBox x:Name="txtProductSearch"
@@ -134,7 +136,10 @@ TextChanged="TxtProductSearch_TextChanged"/>
                         <Button Content="Add" Margin="5" Padding="15,8" Click="BtnProductAdd_Click"/>
                         <Button Content="Update" Margin="5" Padding="15,8" Click="BtnProductUpdate_Click"/>
                         <Button Content="Delete" Margin="5" Padding="15,8" Click="BtnProductDelete_Click"/>
+
                     </StackPanel>
+                    <Label Content="Vì bảng Products có ProductID đang được bảng Orders tham chiếu để lấy khóa ngoại nên khi" Foreground="Red" HorizontalAlignment="Left" Margin="21,4,0,0" Grid.Row="2" VerticalAlignment="Top" Width="561"/>
+                    <Label Content="'DELETE' em chỉ cập nhật Discontinued = true thôi ạ" HorizontalAlignment="Left" Foreground="Red" Margin="21,30,0,0" Grid.Row="2" VerticalAlignment="Top"/>
                 </Grid>
             </TabItem>
 
@@ -232,13 +237,34 @@ TextChanged="TxtProductSearch_TextChanged"/>
                                 <DataGridTextColumn Header="EmployeeID" Binding="{Binding EmployeeID}" Width="*"/>
                                 <DataGridTextColumn Header="OrderDate" Binding="{Binding OrderDate, StringFormat='{}{0:dd/MM/yyyy}'}" Width="200"/>
 
-                                <DataGridTemplateColumn Header="View Details" Width="200">
+                                <DataGridTemplateColumn Header="View Details" Width="100">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <Button Content="Xem" Click="BtnViewOrderDetails_Click" Tag="{Binding OrderID}"/>
+                                            <Button Content="Details" Click="BtnViewOrderDetails_Click" Tag="{Binding OrderID}"/>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
+
+                                <!-- THÊM CỘT ACTION "XÓA" Ở ĐÂY -->
+                                <DataGridTemplateColumn Header="" Width="40">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="X"
+                                                    Background="Red"
+                                                    Foreground="White"
+                                                    FontWeight="Bold"
+                                                    Width="25"
+                                                    Height="25"
+                                                    Padding="0"
+                                                    HorizontalAlignment="Center"
+                                                    VerticalAlignment="Center"
+                                                    Click="DeleteExistingOrder_Click"
+                                                    Tag="{Binding OrderID}"/>
+                                            <!-- Truyền OrderID của đơn hàng -->
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+
                             </DataGrid.Columns>
                         </DataGrid>
                     </Grid>

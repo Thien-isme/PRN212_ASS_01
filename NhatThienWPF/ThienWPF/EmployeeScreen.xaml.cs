@@ -503,6 +503,35 @@ namespace ThienWPF
         private void BtnViewOrderDetails_Click(object sender, RoutedEventArgs e)
         {
             // Logic sẽ được viết ở đây
+            if (sender is Button button && button.Tag is int orderId)
+            {
+                OrderDetailsDialog dialog = new OrderDetailsDialog(orderId);
+                dialog.ShowDialog();
+            }
+        }
+
+        private void DeleteExistingOrder_Click(object sender, RoutedEventArgs e)
+        {
+            var button = sender as Button;
+            if (button != null && button.Tag is int OrderID)
+            {
+                MessageBoxResult result = MessageBox.Show($"Are you sure you want to delete Order ID: {OrderID}?", "Confirm Deletion", MessageBoxButton.YesNo, MessageBoxImage.Warning);
+                if (result == MessageBoxResult.Yes)
+                {
+                    try
+                    {
+                        orderService.Delete(OrderID);
+                        MessageBox.Show($"Order ID: {OrderID} deleted successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                        // Sau khi xóa thành công, tải lại danh sách đơn hàng để cập nhật DataGrid
+                        LoadExistingOrders();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error deleting order: {ex.Message}\nDetails: {ex.InnerException?.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    }
+                }
+            }
         }
 
         // --- Báo cáo ---

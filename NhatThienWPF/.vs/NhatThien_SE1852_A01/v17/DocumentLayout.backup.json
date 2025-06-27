@@ -3,12 +3,40 @@
   "WorkspaceRootPath": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0C94A813-38C5-4950-ADC1-755F90A7D5AD}|Repositories\\Repositories.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C94A813-38C5-4950-ADC1-755F90A7D5AD}|Repositories\\Repositories.csproj|solutionrelative:repositories\\orderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D070E016-DD12-44BC-9D80-41771C955756}|Services\\Services.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D070E016-DD12-44BC-9D80-41771C955756}|Services\\Services.csproj|solutionrelative:services\\orderservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\employeescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\employeescreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\employeescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\employeescreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\orderdetailsdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\orderdetailsdialog.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D042877-17E1-4AA9-A4EC-69A47ADEB44B}|BussinessObject\\BussinessObject.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\bussinessobject\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D042877-17E1-4AA9-A4EC-69A47ADEB44B}|BussinessObject\\BussinessObject.csproj|solutionrelative:bussinessobject\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\orderdetailsdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\orderdetailsdialog.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\customerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\customerscreen.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\thienwpf\\customerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4593A9D8-2108-490F-90A9-E3912E2582B2}|ThienWPF\\NhatThienWPF.csproj|solutionrelative:thienwpf\\customerscreen.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D070E016-DD12-44BC-9D80-41771C955756}|Services\\Services.csproj|f:\\ky_5_fpt\\prn212\\assignment\\nhatthienwpf\\services\\orderdetailsviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D070E016-DD12-44BC-9D80-41771C955756}|Services\\Services.csproj|solutionrelative:services\\orderdetailsviewmodelservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,30 +46,120 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CustomerScreen.xaml.cs",
-              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\CustomerScreen.xaml.cs",
-              "RelativeDocumentMoniker": "ThienWPF\\CustomerScreen.xaml.cs",
-              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\CustomerScreen.xaml.cs",
-              "RelativeToolTip": "ThienWPF\\CustomerScreen.xaml.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAAwGQAAAAjAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "OrderRepository.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\OrderRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\OrderRepository.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Repositories\\OrderRepository.cs",
+              "RelativeToolTip": "Repositories\\OrderRepository.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAQwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T16:05:41.742Z"
+              "WhenOpened": "2025-06-27T06:20:09.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "OrderService.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\OrderService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderService.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\OrderService.cs",
+              "RelativeToolTip": "Services\\OrderService.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T06:19:37.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CustomerScreen.xaml",
               "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\CustomerScreen.xaml",
               "RelativeDocumentMoniker": "ThienWPF\\CustomerScreen.xaml",
               "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\CustomerScreen.xaml",
               "RelativeToolTip": "ThienWPF\\CustomerScreen.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-26T16:04:02.932Z",
+              "WhenOpened": "2025-06-27T06:15:04.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetailsDialog.xaml.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\OrderDetailsDialog.xaml.cs",
+              "RelativeDocumentMoniker": "ThienWPF\\OrderDetailsDialog.xaml.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\OrderDetailsDialog.xaml.cs",
+              "RelativeToolTip": "ThienWPF\\OrderDetailsDialog.xaml.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAAAE8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T05:59:05.555Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "BussinessObject\\OrderDetail.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\BussinessObject\\OrderDetail.cs",
+              "RelativeToolTip": "BussinessObject\\OrderDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T04:38:30.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrderDetailsDialog.xaml",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\OrderDetailsDialog.xaml",
+              "RelativeDocumentMoniker": "ThienWPF\\OrderDetailsDialog.xaml",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\OrderDetailsDialog.xaml",
+              "RelativeToolTip": "ThienWPF\\OrderDetailsDialog.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-27T04:46:32.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EmployeeScreen.xaml",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\EmployeeScreen.xaml",
+              "RelativeDocumentMoniker": "ThienWPF\\EmployeeScreen.xaml",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\EmployeeScreen.xaml",
+              "RelativeToolTip": "ThienWPF\\EmployeeScreen.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-27T04:07:44.72Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmployeeScreen.xaml.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\EmployeeScreen.xaml.cs",
+              "RelativeDocumentMoniker": "ThienWPF\\EmployeeScreen.xaml.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\ThienWPF\\EmployeeScreen.xaml.cs",
+              "RelativeToolTip": "ThienWPF\\EmployeeScreen.xaml.cs",
+              "ViewState": "AgIAAPwBAAAAAAAAAAAowAoCAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T06:10:34.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OrderDetailsViewModelService.cs",
+              "DocumentMoniker": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\OrderDetailsViewModelService.cs",
+              "RelativeDocumentMoniker": "Services\\OrderDetailsViewModelService.cs",
+              "ToolTip": "F:\\Ky_5_FPT\\PRN212\\Assignment\\NhatThienWPF\\Services\\OrderDetailsViewModelService.cs",
+              "RelativeToolTip": "Services\\OrderDetailsViewModelService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABwAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-27T05:22:27.175Z",
               "EditorCaption": ""
             }
           ]
